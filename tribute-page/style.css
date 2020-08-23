@@ -1,0 +1,28 @@
+#main {
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
+#main img {
+  max-width: 100%;
+  height: auto;
+}
+#main figcaption {
+  margin-bottom: 15px;
+}
+#main #tribute-info ul {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+#main #tribute-info ul li {
+  line-height: 1.9;
+}
+#main #tribute-info blockquote {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */
