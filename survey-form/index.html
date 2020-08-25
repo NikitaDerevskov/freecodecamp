@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <main class="survey-page">
+        <section class="form-description">
+            <h1 class="form-description__title" id="title">
+                Your tech stask
+            </h1>
+            <p class="form-description__body" id="description">
+                A survey about what technologies you work with.
+            </p>
+        </section>
+        <section class="survey-form">
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Name</label> <!-- ****-label - cos of user sasses-->
+                    <input type="text" id="name" placeholder="Your name">
+
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" min="0" max="122" placeholder="Your age"> <!-- id number because user cases freecodecamp, why max === 122? - https://en.wikipedia.org/wiki/Oldest_people -->
+
+                    <label for="role">Which option best describes your current role?</label>
+                    <select name="role" id="role">
+                        <option value="not_chosen" disabled selected>Select you role</option>
+                        <option value="student">Student</option>
+                        <option value="employee">Employee</option>
+                        <option value="prefer_not_to_say">Prefer not to say</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you recommend your tech stack to a friend?)</legend>
+                    <label for="" name="recommend-stack">Definitely</label>
+                    <input type="radio">
+
+                    <label for="" name="recommend-stack">Not sure</label>
+                    <input type="radio">
+
+                    <label for="" name="recommend-stack">OMG of cos NOT!</label>
+                    <input type="radio">
+                </fieldset>
+                <fieldset>
+                    
+                </fieldset>
+                <fieldset>
+                    
+                </fieldset>
+                <fieldset>
+                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+<!-- TODO сделать обёртку над label+input как formgroup или что то такое -->
