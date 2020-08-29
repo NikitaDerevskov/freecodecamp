@@ -33,7 +33,7 @@
                     </article>
                     <article class="survey-form-element">
                         <label for="role">Which option best describes your current role?</label>
-                        <select name="role" id="role">
+                        <select name="role" id="dropdown"> <!-- dropdown because freecodecamp requirement -->
                             <option value="not_chosen" disabled selected>Select you role</option>
                             <option value="student">Student</option>
                             <option value="employee">Employee</option>
@@ -57,7 +57,31 @@
                     </article>
                 </fieldset>
                 <fieldset>
-                    
+                    <legend>What do you use?</legend>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="typescipt" type="checkbox" id="checkbox-typescript"> <!-- in normal project id of input - key from object for example -->
+                        <label for="checkbox-typescript">TypeScript</label>
+                    </article>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="flow" type="checkbox" id="checkbox-flow">
+                        <label for="checkbox-flow">Flow</label>
+                    </article>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="react" type="checkbox" id="checkbox-react">
+                        <label for="checkbox-react">React</label>
+                    </article>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="angular" type="checkbox" id="checkbox-angular">
+                        <label for="checkbox-angular">Angular</label>
+                    </article>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="vue" type="checkbox" id="checkbox-vue">
+                        <label for="checkbox-vue">Vue</label>
+                    </article>
+                    <article class="survey-form-element">
+                        <input name="tech-stack" value="cyclejs" type="checkbox" id="checkbox-cyclejs">
+                        <label for="checkbox-cyclejs">CycleJs</label>
+                    </article>
                 </fieldset>
                 <fieldset>
                     
@@ -70,4 +94,3 @@
     </main>
 </body>
 </html>
-<!-- TODO сделать обёртку над label+input как formgroup или что то такое -->
