@@ -8,89 +8,91 @@
 </head>
 <body>
     <main class="survey-page">
-        <section class="form-description">
-            <h1 class="form-description__title" id="title">
-                Your tech stask
-            </h1>
-            <p class="form-description__body" id="description">
-                A survey about what technologies you work with.
-            </p>
-        </section>
         <section class="survey-form">
-            <form id="survey-form">
-                <fieldset>
-                    <article class="survey-form-element">
-                        <label for="name" id="name-label">Name</label>
-                        <input type="text" id="name" placeholder="Your name">
-                    </article>
-                    <article class="survey-form-element">
-                        <label for="email" id="email-label">Email</label>
-                        <input type="email" id="email" placeholder="Your email">
-                    </article>
-                    <article class="survey-form-element">
-                        <label for="number" id="number-label">Age</label>
-                        <input type="number" id="number" min="0" max="122" placeholder="Your age"> <!-- id number because user cases freecodecamp, why max === 122? - https://en.wikipedia.org/wiki/Oldest_people -->
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <article class="survey-form-element">
-                        <label for="role">Which option best describes your current role?</label>
-                        <select name="role" id="dropdown"> <!-- dropdown because freecodecamp requirement -->
-                            <option value="not_chosen" disabled selected>Select you role</option>
-                            <option value="student">Student</option>
-                            <option value="employee">Employee</option>
-                            <option value="prefer_not_to_say">Prefer not to say</option>
-                        </select>
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <legend>Would you recommend your tech stack to a friend?</legend>
-                    <article class="survey-form-element">
-                        <input type="radio" id="recommend-stack-definitely" name="recommend-stack">
-                        <label for="recommend-stack-definitely">Definitely</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input type="radio" id="recommend-stack-not-sure"  name="recommend-stack">
-                        <label for="recommend-stack-not-sure">Not sure</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input type="radio" id="recommend-stack-not" name="recommend-stack">
-                        <label for="recommend-stack-not">OMG of cos NOT!</label>
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <legend>What do you use?</legend>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="typescipt" type="checkbox" id="checkbox-typescript"> <!-- in normal project id of input - key from object for example -->
-                        <label for="checkbox-typescript">TypeScript</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="flow" type="checkbox" id="checkbox-flow">
-                        <label for="checkbox-flow">Flow</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="react" type="checkbox" id="checkbox-react">
-                        <label for="checkbox-react">React</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="angular" type="checkbox" id="checkbox-angular">
-                        <label for="checkbox-angular">Angular</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="vue" type="checkbox" id="checkbox-vue">
-                        <label for="checkbox-vue">Vue</label>
-                    </article>
-                    <article class="survey-form-element">
-                        <input name="tech-stack" value="cyclejs" type="checkbox" id="checkbox-cyclejs">
-                        <label for="checkbox-cyclejs">CycleJs</label>
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <legend>Any comments or suggestions?</legend>
-                    <textarea name="comments" id="textarea-comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
-                </fieldset>
-                <button id="submit">submit</button>
-            </form>
+            <section class="survey-form-description">
+                <h1 class="form-description__title" id="title">
+                    Your tech stask
+                </h1>
+                <p class="form-description__body" id="description">
+                    A survey about what technologies you work with.
+                </p>
+            </section>
+            <section class="survey-form-body">
+                <form id="survey-form">
+                    <fieldset>
+                        <article class="survey-form-element">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </article>
+                        <article class="survey-form-element">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </article>
+                        <article class="survey-form-element">
+                            <label for="number" id="number-label">Age</label>
+                            <input type="number" id="number" min="0" max="122" placeholder="Your age"> <!-- id number because user cases freecodecamp, why max === 122? - https://en.wikipedia.org/wiki/Oldest_people -->
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <article class="survey-form-element">
+                            <label for="role">Which option best describes your current role?</label>
+                            <select name="role" id="dropdown"> <!-- dropdown because freecodecamp requirement -->
+                                <option value="not_chosen" disabled selected>Select you role</option>
+                                <option value="student">Student</option>
+                                <option value="employee">Employee</option>
+                                <option value="prefer_not_to_say">Prefer not to say</option>
+                            </select>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Would you recommend your tech stack to a friend?</legend>
+                        <article class="survey-form-element">
+                            <input type="radio" id="recommend-stack-definitely" name="recommend-stack">
+                            <label for="recommend-stack-definitely">Definitely</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input type="radio" id="recommend-stack-not-sure"  name="recommend-stack">
+                            <label for="recommend-stack-not-sure">Not sure</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input type="radio" id="recommend-stack-not" name="recommend-stack">
+                            <label for="recommend-stack-not">OMG of cos NOT!</label>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What do you use?</legend>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="typescipt" type="checkbox" id="checkbox-typescript"> <!-- in normal project id of input - key from object for example -->
+                            <label for="checkbox-typescript">TypeScript</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="flow" type="checkbox" id="checkbox-flow">
+                            <label for="checkbox-flow">Flow</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="react" type="checkbox" id="checkbox-react">
+                            <label for="checkbox-react">React</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="angular" type="checkbox" id="checkbox-angular">
+                            <label for="checkbox-angular">Angular</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="vue" type="checkbox" id="checkbox-vue">
+                            <label for="checkbox-vue">Vue</label>
+                        </article>
+                        <article class="survey-form-element">
+                            <input name="tech-stack" value="cyclejs" type="checkbox" id="checkbox-cyclejs">
+                            <label for="checkbox-cyclejs">CycleJs</label>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Any comments or suggestions?</legend>
+                        <textarea name="comments" id="textarea-comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                    </fieldset>
+                    <button id="submit">submit</button>
+                </form>
+            </section>
         </section>
     </main>
 </body>

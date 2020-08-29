@@ -1,7 +1,25 @@
+body {
+    background-image: url(background.png);
+}
+
 .survey-page {
     .survey-form {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: monospace;  // just for fun ;)
+
         fieldset {
             border: none;
+        }
+        &-element {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            label {
+                margin-left: 10px;
+                font-size: 15px;
+            }
         }
     }
 }
