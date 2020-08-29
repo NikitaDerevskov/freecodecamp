@@ -3,6 +3,8 @@ body {
 }
 
 .survey-page {
+    font-size: 15px;
+
     .survey-form {
         max-width: 600px;
         margin: 0 auto;
@@ -10,15 +12,56 @@ body {
 
         fieldset {
             border: none;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-family: monospace;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        &__base-info {
+            .survey-form-element {
+                margin-bottom: 13px;
+                label {
+                    display: block;
+                }
+                input, select {
+                    margin-top: 10px;
+                    width: 100%;
+                    max-width: 379px;
+                    padding: 5px;
+                }
+                select {
+                    max-width: 393px;
+                }
+            }
+        }
+        &__recommend, &__tech-stack-info {
+            .survey-form-element {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &__comments {
+            .survey-form-element {
+                textarea {
+                    margin-top: 10px;
+                    width: 100%;
+                    max-width: 379px;
+                    padding: 5px; // TODO extend styles?
+                }
+            }
         }
         &-element {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-left: 15px;
 
-            label {
+            input[type=radio] + label, input[type=checkbox] + label {
                 margin-left: 10px;
-                font-size: 15px;
+            }
+
+            input[type="radio"] + label {
+                margin-top: 3px;
             }
         }
     }
