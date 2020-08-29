@@ -4,28 +4,33 @@ body {
 
 .survey-page {
     font-size: 15px;
+    $font-family: monospace, sans-serif; // just for fun)
 
     .survey-form {
         max-width: 600px;
         margin: 0 auto;
-        font-family: monospace;  // just for fun ;)
+        font-family: $font-family;
 
+        &__description {
+            margin-left: 15px;
+            font-size: 17px;
+        }
         fieldset {
             border: none;
             margin-bottom: 15px;
         }
         legend {
-            font-family: monospace;
+            font-family: $font-family;
             font-size: 17px;
             margin-bottom: 10px;
         }
-        &__base-info {
+        &__base-info, &__comments {
             .survey-form-element {
                 margin-bottom: 13px;
                 label {
                     display: block;
                 }
-                input, select {
+                input, select, textarea {
                     margin-top: 10px;
                     width: 100%;
                     max-width: 379px;
@@ -39,17 +44,7 @@ body {
         &__recommend, &__tech-stack-info {
             .survey-form-element {
                 display: flex;
-                align-items: center;
-            }
-        }
-        &__comments {
-            .survey-form-element {
-                textarea {
-                    margin-top: 10px;
-                    width: 100%;
-                    max-width: 379px;
-                    padding: 5px; // TODO extend styles?
-                }
+                align-items: center; // for better view of checkboxs + radio + label - i want to do like this in that project (Liner: The real Rules exstentions)
             }
         }
         &-element {
@@ -63,6 +58,16 @@ body {
             input[type="radio"] + label {
                 margin-top: 3px;
             }
+        }
+        button[type=submit] {
+            text-transform: uppercase;
+            font-family: $font-family;
+            margin-left: 28px;
+            padding: 10px;
+            border: 0.5px solid #000;
+            font-size: 17px;
+            border-radius: 5px;
+            background-color: #fff;
         }
     }
 }

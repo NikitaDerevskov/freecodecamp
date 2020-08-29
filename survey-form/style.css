@@ -8,41 +8,39 @@ body {
 .survey-page .survey-form {
   max-width: 600px;
   margin: 0 auto;
-  font-family: monospace;
+  font-family: monospace, sans-serif;
+}
+.survey-page .survey-form__description {
+  margin-left: 15px;
+  font-size: 17px;
 }
 .survey-page .survey-form fieldset {
   border: none;
   margin-bottom: 15px;
 }
 .survey-page .survey-form legend {
-  font-family: monospace;
+  font-family: monospace, sans-serif;
   font-size: 17px;
   margin-bottom: 10px;
 }
-.survey-page .survey-form__base-info .survey-form-element {
+.survey-page .survey-form__base-info .survey-form-element, .survey-page .survey-form__comments .survey-form-element {
   margin-bottom: 13px;
 }
-.survey-page .survey-form__base-info .survey-form-element label {
+.survey-page .survey-form__base-info .survey-form-element label, .survey-page .survey-form__comments .survey-form-element label {
   display: block;
 }
-.survey-page .survey-form__base-info .survey-form-element input, .survey-page .survey-form__base-info .survey-form-element select {
+.survey-page .survey-form__base-info .survey-form-element input, .survey-page .survey-form__base-info .survey-form-element select, .survey-page .survey-form__base-info .survey-form-element textarea, .survey-page .survey-form__comments .survey-form-element input, .survey-page .survey-form__comments .survey-form-element select, .survey-page .survey-form__comments .survey-form-element textarea {
   margin-top: 10px;
   width: 100%;
   max-width: 379px;
   padding: 5px;
 }
-.survey-page .survey-form__base-info .survey-form-element select {
+.survey-page .survey-form__base-info .survey-form-element select, .survey-page .survey-form__comments .survey-form-element select {
   max-width: 393px;
 }
 .survey-page .survey-form__recommend .survey-form-element, .survey-page .survey-form__tech-stack-info .survey-form-element {
   display: flex;
   align-items: center;
-}
-.survey-page .survey-form__comments .survey-form-element textarea {
-  margin-top: 10px;
-  width: 100%;
-  max-width: 379px;
-  padding: 5px;
 }
 .survey-page .survey-form-element {
   margin-bottom: 5px;
@@ -53,6 +51,16 @@ body {
 }
 .survey-page .survey-form-element input[type=radio] + label {
   margin-top: 3px;
+}
+.survey-page .survey-form button[type=submit] {
+  text-transform: uppercase;
+  font-family: monospace, sans-serif;
+  margin-left: 28px;
+  padding: 10px;
+  border: 0.5px solid #000;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
