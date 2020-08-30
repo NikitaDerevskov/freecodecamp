@@ -5,10 +5,41 @@
   }
 
   .product-page {
-      &__header {
-          position: fixed;
+      fieldset {
+          border: none;
       }
+
+      &__header {
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        display: flex;
+        height: 50px;
+
+
+        img {
+            height: 100px;
+            margin-top: -25px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+      }
+
       &__main {
+        margin-top: 50px;
+
         form {
             input[type=submit] {
                 text-transform: uppercase;
