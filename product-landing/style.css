@@ -52,5 +52,8 @@
   display: block;
   margin: 0 auto;
 }
+.product-page__footer {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
