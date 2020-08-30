@@ -1,3 +1,18 @@
-* {
-    color: red;
-}
+@media screen and (max-width: 600px) {
+    body {
+        color: red; // TODO change to some things.
+    }
+  }
+
+  .product-page {
+      &__header {
+          position: fixed;
+      }
+      &__main {
+        form {
+            input[type=submit] {
+                text-transform: uppercase;
+            }
+        }
+      }
+  }

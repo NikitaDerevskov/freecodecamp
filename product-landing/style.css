@@ -1,5 +1,13 @@
-* {
-  color: red;
+@media screen and (max-width: 600px) {
+  body {
+    color: red;
+  }
+}
+.product-page__header {
+  position: fixed;
+}
+.product-page__main form input[type=submit] {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
