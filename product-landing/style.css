@@ -44,6 +44,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.product-page__contact input[type=email] {
+  padding: 10px;
+  margin-top: 10px;
+  min-width: 248px;
+}
+.product-page__contact input[type=submit] {
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #767676;
+  border-radius: 10px;
 }
 .product-page__features-item {
   display: flex;
