@@ -56,6 +56,27 @@
           flex-direction: column;
           align-items: center;
       }
+      &__features {
+          &-item {
+              display: flex;
+              margin-bottom: 35px;
+          }
+          &-img img {
+              height: 75px;
+          }
+          &-text {
+              font-size: 17px;
+              margin-left: 35px;
+              h4 {
+                  font-size: 21px;
+                  margin-top: 5px;
+                  margin-bottom: 0px;
+              }
+              p {
+                  margin-top: 5px;
+              }
+          }
+      }
       &__submit-button {
           width: 100%;
           input {

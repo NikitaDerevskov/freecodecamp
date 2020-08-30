@@ -45,6 +45,25 @@
   flex-direction: column;
   align-items: center;
 }
+.product-page__features-item {
+  display: flex;
+  margin-bottom: 35px;
+}
+.product-page__features-img img {
+  height: 75px;
+}
+.product-page__features-text {
+  font-size: 17px;
+  margin-left: 35px;
+}
+.product-page__features-text h4 {
+  font-size: 21px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.product-page__features-text p {
+  margin-top: 5px;
+}
 .product-page__submit-button {
   width: 100%;
 }
