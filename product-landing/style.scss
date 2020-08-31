@@ -4,6 +4,13 @@
     }
   }
 
+  .basic-button {
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 10px;
+  }
+
   .product-page {
       &__header {
         position: fixed;
@@ -63,10 +70,7 @@
               min-width: 248px;
           }
           input[type=submit] {
-              padding: 10px;
-              background-color: #FFF;
-              border: 1px solid rgb(118, 118, 118);
-              border-radius: 10px;
+              @extend .basic-button;
           }
       }
       &__features {
@@ -95,6 +99,37 @@
           input {
             display: block;
             margin: 0 auto;
+          }
+      }
+
+      &__pricing {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          &-item {
+              border: 1px solid rgb(118, 118, 118);
+              margin-left: 50px;
+              min-width: 200px;
+
+              &-header {
+                  text-align: center;
+                  background-color: #000;
+                  padding-bottom: 2px;
+                  padding-top: 15px;
+                  padding: 15px;
+                  color: #FFF;
+                  display: block;
+                  h2 {
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                  }
+              }
+              &-body {
+                  padding: 0px 15px 15px 15px;
+                  button {
+                    @extend .basic-button;
+                  }
+              }
           }
       }
 
