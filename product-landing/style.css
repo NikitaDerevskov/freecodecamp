@@ -16,6 +16,7 @@
   top: 0px;
   display: flex;
   height: 50px;
+  background-color: white;
 }
 .product-page__header img {
   height: 100px;
@@ -37,14 +38,13 @@
   color: #000;
 }
 .product-page__main {
-  width: 900px;
-  margin: 0 auto;
-  margin-top: 50px;
+  max-width: 900px;
+  margin: 50px auto 0;
 }
 .product-page__main fieldset {
   border: none;
 }
-.product-page__main form input[type=submit] {
+.product-page__main form button[type=submit] {
   text-transform: uppercase;
 }
 .product-page__contact {
@@ -89,17 +89,17 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .product-page__pricing-item {
   border: 1px solid #767676;
   margin-left: 50px;
   min-width: 200px;
+  margin-bottom: 20px;
 }
 .product-page__pricing-item-header {
   text-align: center;
   background-color: #000;
-  padding-bottom: 2px;
-  padding-top: 15px;
   padding: 15px;
   color: #FFF;
   display: block;
