@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
     body {
-        color: red; // TODO change to some things.
+        color: red; // just because i need query param
     }
   }
 
@@ -18,6 +18,7 @@
         top: 0px;
         display: flex;
         height: 50px;
+        background-color: white;
 
 
         img {
@@ -43,16 +44,15 @@
       }
 
       &__main {
-        width: 900px;
-        margin: 0 auto;
-        margin-top: 50px;
+        max-width: 900px;
+        margin: 50px auto 0;
 
         fieldset {
             border: none;
         }
 
         form {
-            input[type=submit] {
+            button[type=submit] {
                 text-transform: uppercase;
             }
         }
@@ -106,16 +106,15 @@
           display: flex;
           justify-content: center;
           margin-top: 50px;
+          flex-wrap: wrap;
           &-item {
               border: 1px solid rgb(118, 118, 118);
               margin-left: 50px;
               min-width: 200px;
-
+              margin-bottom: 20px;
               &-header {
                   text-align: center;
                   background-color: #000;
-                  padding-bottom: 2px;
-                  padding-top: 15px;
                   padding: 15px;
                   color: #FFF;
                   display: block;
