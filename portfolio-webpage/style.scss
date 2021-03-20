@@ -9,8 +9,22 @@ main {
     height: 100vh;
   }
 
+  .welcome-content, .projects , .socials {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .welcome-content {
-    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+      font-weight: 300;
+      font-size: 25px;
+    }
   }
 }
 
