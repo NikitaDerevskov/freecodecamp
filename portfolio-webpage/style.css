@@ -1,5 +1,33 @@
-* {
-  color: black;
+@media screen and (max-width: 500px) {
+  * {
+    color: red;
+  }
+}
+main .welcome {
+  height: 100vh;
+}
+main .welcome-content {
+  padding-top: 80px;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  max-width: 130px;
+  margin-left: auto;
+}
+nav ul > li {
+  margin-bottom: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

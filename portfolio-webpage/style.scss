@@ -1,3 +1,36 @@
-* {
-  color : black
+@media screen and (max-width: 500px) {
+  * {
+    color: red;
+  }
+}
+
+main {
+  .welcome {
+    height: 100vh;
+  }
+
+  .welcome-content {
+    padding-top: 80px;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+  ul {
+    list-style: none;
+    max-width: 130px;
+    margin-left: auto;
+
+    > li {
+      margin-bottom: 5px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
