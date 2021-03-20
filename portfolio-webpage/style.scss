@@ -26,6 +26,39 @@ main {
       font-size: 25px;
     }
   }
+
+  .projects {
+    .project-tiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      > .project-tile {
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      .project-tile {
+        border: 1px solid black;
+        width: 150px;
+        &__img img {
+          width: 150px;
+        }
+        &__title {
+          background-color: black;
+          color: white;
+          padding: 5px;
+          text-align: center;
+        }
+      }
+    }
+    .project-footer {
+      margin-top: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 nav {

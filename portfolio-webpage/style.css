@@ -21,6 +21,36 @@ main .welcome-content h1 {
   font-weight: 300;
   font-size: 25px;
 }
+main .projects .project-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .projects .project-tiles > .project-tile {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+main .projects .project-tiles .project-tile {
+  border: 1px solid black;
+  width: 150px;
+}
+main .projects .project-tiles .project-tile__img img {
+  width: 150px;
+}
+main .projects .project-tiles .project-tile__title {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+main .projects .project-footer {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .projects .project-footer a {
+  text-decoration: none;
+}
 
 nav {
   position: fixed;
