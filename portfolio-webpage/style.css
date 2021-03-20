@@ -51,6 +51,15 @@ main .projects .project-footer {
 main .projects .project-footer a {
   text-decoration: none;
 }
+main .socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+main .socials .social a {
+  text-decoration: none;
+}
 
 nav {
   position: fixed;

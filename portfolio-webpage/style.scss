@@ -59,6 +59,19 @@ main {
       }
     }
   }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .social {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 nav {
