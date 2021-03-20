@@ -1,10 +1,31 @@
-* {
-  color: blue;
+main {
+  margin-left: 150px;
+}
+
+main, aside {
+  max-height: 98vh;
+  overflow-y: auto;
+}
+
+aside {
+  position: fixed;
+  margin-right: 10px;
+}
+aside ul {
+  list-style: none;
+  padding-left: 5px;
+  white-space: nowrap;
+}
+aside ul > li {
+  margin-bottom: 10px;
+}
+aside a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
-  * {
-    color: red;
+  aside {
+    display: none;
   }
 }
 
